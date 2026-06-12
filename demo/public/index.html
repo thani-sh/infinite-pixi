@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Pixi - Fullstack Demo</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../src/styles.css" />
+  </head>
+  <body>
+    <!-- Canvas container -->
+    <div id="canvas-container"></div>
+
+    <!-- UI Overlay HUD -->
+    <div class="hud-container">
+      <div class="hud-header">
+        <h1 class="hud-title">Infinite Pixi</h1>
+        <p class="hud-subtitle">Interactive Zoom & Pan Camera</p>
+      </div>
+
+      <div class="hud-stats">
+        <div class="stat-item">
+          <span class="stat-label">Zoom Level</span>
+          <span id="zoom-value" class="stat-value">1.0x</span>
+        </div>
+      </div>
+
+      <div class="hud-controls">
+        <div class="control-group">
+          <label class="control-label">Grid Style</label>
+          <div class="button-toggle">
+            <button id="grid-dots-btn" class="btn active">Dots</button>
+            <button id="grid-lines-btn" class="btn">Lines</button>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label class="control-label">Camera Actions</label>
+          <button id="reset-btn" class="btn btn-primary">Reset Viewport</button>
+        </div>
+      </div>
+
+      <div class="hud-footer">Drag to Pan • Scroll to Zoom</div>
+    </div>
+
+    <!-- Import TypeScript bundle entrypoint -->
+    <script type="module" src="../src/index.ts"></script>
+  </body>
+</html>

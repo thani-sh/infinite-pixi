@@ -1,0 +1,16 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run copy-lib && bun run server.ts",
+    "copy-lib": "mkdir -p src/lib && cp -f ../src/*.ts src/lib/ && rm -f src/lib/*.test.ts"
+  },
+  "dependencies": {
+    "pixi.js": "^8.18.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}

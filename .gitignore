@@ -29,3 +29,6 @@ logs
 
 # Secrets
 .env
+
+# Generated library code in demo
+demo/src/lib/
